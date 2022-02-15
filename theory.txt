@@ -1,0 +1,124 @@
+(Ref file App.js to index.js)
+React Fragment
+Fragment is used to group a list of children without adding extra nodes to the DOM
+
+Example:
+<React.Fragment>
+<h1>Hello world</h1>      
+</React.Fragment>
+
+Also Fragment use key attribute;
+<React.Fragment key={id}>
+<h1>{item.title}</h1>      
+<p>{item.description}</p>      
+</React.Fragment>
+
+
+----------------------------------------------------------------------------------
+Function Component;
+It is a JS function which accepts a single "props" object argument with data and return a React Element..
+
+
+
+function fun1(props) {
+    return <h1>Hello</h1>
+}
+
+const fun1  =  (props) => <h1>Hello {props.name}</h1>
+
+
+----------------------------------------------------------------------------------
+
+Class Component
+A class Component required you to extend from React.Component. The class must implement a render() member
+function which return a React Component to be rendered, similar to a return value of a function Component. 
+In a class-based Component, props are accessible via this.props.
+
+class App extends Component {
+    render(){
+        return <h1>Hello </h1>
+    }
+}
+
+
+
+----------------------------------------------------------------------------------
+Rendering a Component; (ref Student.js)
+
+
+ReactDOM.render(<Student/>, document.getElementById('root'));
+ReactDOM.render(<Student name="malik"/>, document.getElementById('root'));
+
+example...  
+
+function Studnet(props) {
+    return <h1>Hello {props.name}</h1>
+}
+ReactDOM.render(<Student name="malik"/>, document.getElementById('root'));
+
+Note: yha per Studnet Component me jo name attribute hy, jab ReactDOM.render isy run kare ga tu name ki value 
+      is Component ke props me bhej dega.
+
+
+-----------------------------------------------------------------------------------
+ref Teacher.js to App.js to index.js
+Composing Component (use same Component for multiple value)
+Component can refer to other Component in their output. This lets us use the same Component abstraction for any level of detail.
+
+
+function Teacher(props) {
+    return <h1>Hello {props.name}</h1>
+}
+
+
+function App(){
+    return (
+        <div>
+              <Teacher/>
+              <Teacher/>
+              <Teacher/>
+        </div>
+    )
+}
+
+ReactDOM.render(<App/>, document.getElementById('root'));
+
+here ReactDom render App-component and App render 3 component of Teacher 
+
+-----------------------------------------------------------------------------------------
+
+Function vs Class Component;
+
+
+*Use function components if you are waiting a presentational component which doesn't have it own states or needs to access
+a lifecycle hook. You cannot use setState() in your component because Function Components are plain JavaScript Function.
+
+*Use class Component if you need state or need to access lifecycle hook because all lifecycle hooks are coming from the React.
+Component which you extend from in class components.
+
+
+---------------------------------------------------------------------------------------------
+Ref JSXElement to indus.js
+
+
+JavaScript Expression In JSX 
+
+we can put any valid JavaScript Expression inside the curly braces in JSX. You can pass any JavaScript Expression as children, 
+by enclosing it within {}.
+example..
+
+*const A = <h1>Sum = {10+20}</h1>
+
+* const name = "malik"
+*const A = <h1>{name}</h1>
+
+
+
+----------------------------------------------------------------------------------------
+
+Specifying attribute with JSX.
+
+<h1 className = "bg">Hello world</h1>
+<h1 htmlFor= "name" >Hello world</h1>
+<h1 className =  {ac.tab} >Hello world</h1>
+
