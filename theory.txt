@@ -122,3 +122,60 @@ Specifying attribute with JSX.
 <h1 htmlFor= "name" >Hello world</h1>
 <h1 className =  {ac.tab} >Hello world</h1>
 
+-----------------------------------------------------------------------------------------
+ref props.js to index.js
+PROPS.....
+
+When React sees an element representing a user-define  component, it pass JSX attribute to this component as a single object. 
+We call this object "props".
+
+function Teacher(props) {
+    return <h1>Hello {props.name} and {props.id}</h1>
+}
+
+ReactDOM.render(<Teacher name="malik" id="101" />, document.getElementById('root'));
+ReactDOM.render(<Teacher name="malik" id={100+1} />, document.getElementById('root'));
+ReactDOM.render(<Teacher name={"malik"} id=100 />, document.getElementById('root'));
+
+
+Check type of props data. (npmjs.com prop-type)
+install > npm install prop-types
+
+To use props type import first;
+import PropTypes from 'prop-types';
+
+Student.propTypes = {
+
+    name: PropTypes.string,
+    ArrayData: PropTypes.array,
+    FunctionData: PropTypes.func,
+    Number: PropTypes.number,
+    object: PropTypes.object,
+    symbol: PropTypes.symbol
+
+}
+
+
+
+----------------------------------------------------------------------------------------------
+JSXchild.js to index.js
+JSX children.....
+
+In JSX Expression that contain both an opening tag and a closing tag, the content between those tags is passed as a special prop.
+props.children
+
+example...
+<Student>Im a child<Studnet/>
+
+
+
+
+
+
+
+
+
+
+
+
+

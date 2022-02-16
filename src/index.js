@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import Student from './Student';
 import el from './JSXElement';
-
+import Props from "./Props";
+import Children from './JSXchild';
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -20,9 +21,26 @@ import el from './JSXElement';
 
 // JSX component
 
+// ReactDOM.render(
+//   el,
+//   document.getElementById('root')
+// );
+
+
+// Props...
+// ReactDOM.render(
+//   <Props name="malik" roll = {38} />,
+//   document.getElementById('root')
+// );
+
+
+
+// JSX children
 ReactDOM.render(
-  el,
+  <Children>this is children</Children>,
   document.getElementById('root')
 );
+
+
 
 
