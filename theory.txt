@@ -205,12 +205,38 @@ class Studnet extends Component {
     }
 }
 
+-----------------------------------------------------------------------------------------------------
+Events...
+Handling events with React element is very similar to Handling events on DOM elements. There are some syntactic difference.
+ReactEvent are names using camelCase
+With JSX you pass a function as the event handler, rather than a string.
+
+Example..
+
+In html;
+
+<button onclick="fun()">Submit</button>
+
+In React;
+<button onClick={fun}>Submit</button> //function Component
+<button onClick={this.fun}>Submit</button> //class Component
 
 
+--------------------------------------------------------------
+retrn false;
 
 
+You cannot return false to prevent default behavior in React. You must call preventDefault explicitly.
 
+In html;
+    <a href="https://www.google.com/" onclick="console.log('hello a'); return false">Click Here</a>
 
+In React;
+
+function handlerClick(e){
+    e.preventDefault();
+}
+    <a href="https://www.google.com/" onclick={handlerClick}>Click Here</a>
 
 
 

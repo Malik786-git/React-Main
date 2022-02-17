@@ -6,6 +6,7 @@ import el from './JSXElement';
 import Props from "./Props";
 import Children from './JSXchild';
 import State from "./State";
+import Event from "./Event";
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -44,8 +45,16 @@ import State from "./State";
 
 
 // States 
+// ReactDOM.render(
+//   <State rollNo='38'/>,
+//   document.getElementById('root')
+// )
+
+
+// Events
+
 ReactDOM.render(
-  <State rollNo='38'/>,
+  <Event roll={38}/>,
   document.getElementById('root')
 )
 
