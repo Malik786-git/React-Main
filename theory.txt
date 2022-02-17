@@ -169,6 +169,42 @@ example...
 
 
 
+--------------------------------------------------------------------------------------------------------
+State... (ref: state.js to index.js)
+It is similar to props, but it is provate and fully controlled by the component. We can create state only in class component. It is possible to update the state/Modify the state.
+
+How to initialize state in React Component:-
+*Directly inside class
+class Studnet extends Component {
+    state = {
+        name:"malik",
+        age: this.prop.age
+    }
+    render(){
+        ....
+    }
+}
+
+
+
+*Inside the constructor
+we use constructor to write state, because constructor call first automatically and initialize the value in memory.
+
+
+class Studnet extends Component {
+    constructor(props){
+        // in constructor super must call, it is required to call the parent class constructor.
+        super(props)
+        this.state = {
+            name: "malik",
+           age: this.prop.age
+        }
+    }
+    render(){
+        ....
+    }
+}
+
 
 
 

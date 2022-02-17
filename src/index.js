@@ -5,6 +5,7 @@ import Student from './Student';
 import el from './JSXElement';
 import Props from "./Props";
 import Children from './JSXchild';
+import State from "./State";
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -36,11 +37,15 @@ import Children from './JSXchild';
 
 
 // JSX children
+// ReactDOM.render(
+//   <Children>this is children</Children>,
+//   document.getElementById('root')
+// );
+
+
+// States 
 ReactDOM.render(
-  <Children>this is children</Children>,
+  <State rollNo='38'/>,
   document.getElementById('root')
-);
-
-
-
+)
 
