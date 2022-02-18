@@ -62,6 +62,7 @@ Note: yha per Studnet Component me jo name attribute hy, jab ReactDOM.render isy
 
 -----------------------------------------------------------------------------------
 ref Teacher.js to App.js to index.js
+
 Composing Component (use same Component for multiple value)
 Component can refer to other Component in their output. This lets us use the same Component abstraction for any level of detail.
 
@@ -85,7 +86,7 @@ ReactDOM.render(<App/>, document.getElementById('root'));
 
 here ReactDom render App-component and App render 3 component of Teacher 
 
------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 
 Function vs Class Component;
 
@@ -206,7 +207,7 @@ class Studnet extends Component {
 }
 
 -----------------------------------------------------------------------------------------------------
-Events...
+Events... (ref event.js to index.js)
 Handling events with React element is very similar to Handling events on DOM elements. There are some syntactic difference.
 ReactEvent are names using camelCase
 With JSX you pass a function as the event handler, rather than a string.
@@ -240,4 +241,21 @@ function handlerClick(e){
 
 
 
+------------------------------------------------------------------------------------------------------------
+update State....
+
+setState() method is used to update states.
+
+this.state = {
+    name:"malik"
+}
+
+// take argument as a object;               
+this.setState({name:"jahangir"});
+
+// take argument as a function;
+
+this.setState(function(state, props){
+    return ...
+});
 

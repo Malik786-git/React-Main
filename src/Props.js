@@ -12,7 +12,6 @@ import PropTypes from 'prop-types';
 // for class and props-type
 
 
-
 class Props extends Component {
     render() {
         return (

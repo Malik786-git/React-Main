@@ -7,6 +7,7 @@ import Props from "./Props";
 import Children from './JSXchild';
 import State from "./State";
 import Event from "./Event";
+import UpdateState from "./updateState";
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -51,10 +52,17 @@ import Event from "./Event";
 // )
 
 
+
 // Events
 
+// ReactDOM.render(
+//   <Event roll={38}/>,
+//   document.getElementById('root')
+// )
+
+
+// UpdateState
 ReactDOM.render(
-  <Event roll={38}/>,
+  <UpdateState roll="37"/>,
   document.getElementById('root')
 )
-
