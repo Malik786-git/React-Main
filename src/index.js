@@ -8,6 +8,7 @@ import Children from './JSXchild';
 import State from "./State";
 import Event from "./Event";
 import UpdateState from "./updateState";
+import Studentss from "./Eventargu";
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -62,7 +63,16 @@ import UpdateState from "./updateState";
 
 
 // UpdateState
+// ReactDOM.render(
+//   <UpdateState roll="37"/>,
+//   document.getElementById('root')
+// )
+
+
+
+// Event Argument..
+
 ReactDOM.render(
-  <UpdateState roll="37"/>,
+  <Studentss roll="37"/>,
   document.getElementById('root')
 )

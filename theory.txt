@@ -259,3 +259,15 @@ this.setState(function(state, props){
     return ...
 });
 
+
+
+------------------------------------------------------------------------------------------------------------
+Passing argument to Events handler. (ref: Eventargu.js to indux)
+
+
+<button onClick={(e)=> this.fun(id,e)}>Delete</button>
+or
+<button onClick={this.fun(this,id)}>Delete</button>
+
+Note: In both cases, the e argument representing the React event will be passed as a second argument after the ID.
+
