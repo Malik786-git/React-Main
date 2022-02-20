@@ -259,10 +259,9 @@ this.setState(function(state, props){
     return ...
 });
 
-
-
 ------------------------------------------------------------------------------------------------------------
 Passing argument to Events handler. (ref: Eventargu.js to indux)
+
 
 
 <button onClick={(e)=> this.fun(id,e)}>Delete</button>
@@ -270,4 +269,28 @@ or
 <button onClick={this.fun(this,id)}>Delete</button>
 
 Note: In both cases, the e argument representing the React event will be passed as a second argument after the ID.
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+Phases of Component...
+Mounting - Mounting is the process of creating an element and inserting it in a DOM tree.
+Updating - Updating is the process of changing state or props of component and update change to nodes already in the DOM
+Error Handling - These are used when there is error during rendering, in lifecycle method or in the constructor of any component.
+Unmounting - Unmounting is the process of removing components from the DOM.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

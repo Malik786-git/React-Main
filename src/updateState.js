@@ -11,7 +11,8 @@ class UpdateState extends React.Component {
     }
     
     fun = () =>{
-        // this.setState({name:"jahangir", roll:"38"}); //take object to update state 
+
+        // this.setState({name:"jahangir", roll:"38"}); //take object to update state... 
         // and
         this.setState(function(state, props) {
             console.log(state, props);

@@ -44,7 +44,13 @@ class Studentss extends Component {
         return(
             <div>
             <h1>Hello {this.state.name}</h1>
-            <button onClick={(e)=> this.fun(this.state.id, e)}>Click Here</button>
+            <button 
+            onClick={
+                (e)=> this.fun(this.state.id, e)
+                }
+                >
+                Click Here
+                </button>
             </div>
         )
     }

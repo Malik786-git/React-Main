@@ -32,4 +32,3 @@ class State extends Component {
 
 export default State;
 
-
