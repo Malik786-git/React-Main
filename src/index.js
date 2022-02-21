@@ -11,6 +11,8 @@ import UpdateState from "./updateState";
 import Studentss from "./Eventargu";
 import Mounting from './Mounting';
 import Updating from './Updating';
+import Unmounting from './unmounting';
+import Unmount from './unmount';
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -87,7 +89,23 @@ import Updating from './Updating';
 // )
 
 // Updating
+// ReactDOM.render(
+//   <Updating/>,
+//   document.getElementById('root')
+// )
+
+
+// Unmountng
 ReactDOM.render(
-  <Updating/>,
+  <Unmounting/>,
   document.getElementById('root')
 )
+ReactDOM.render(
+  <Unmount/>,
+  document.getElementById('stu')
+)
+// now we unmount root element
+ReactDOM.unmountComponentAtNode(document.getElementById('root'));
+
+
+

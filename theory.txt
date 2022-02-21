@@ -335,6 +335,10 @@ Updating - Updating is the process of changing state or props of component and u
 Error Handling(optional phase) - These are used when there is error during rendering, in lifecycle method or in the constructor of any component.
      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Unmounting - Unmounting is the process of removing components from the DOM.
+               (ref: unmounting.js to unmount.js to index.js and index.html root= stu)
+               componentWillUnmount() before component is unmounted and destroyed it call.
+               before removing the component in DOM.
+
 
 
 -------------------------------------------------------------------------------------------------------------
