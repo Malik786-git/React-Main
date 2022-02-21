@@ -308,10 +308,34 @@ Methods are used to create and inserted into the DOM.
     get data from server and set the data to state.
 
     Note: it call last after whole app render.
-      
-Updating - Updating is the process of changing state or props of component and update change to nodes already in the DOM
+
+     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Updating - Updating is the process of changing state or props of component and update change to nodes already in the DOM.
+     Updating Method...
+          *statis getDerivedStateFromProps() (ref: updating.js to update.js to index.js)
+          
+          *sholdComponentUpdate() (same ref above)
+          this is invoked before rendering when new props and state are being received. THis method return true by default.
+          Syntax: shouldComponentUpdate(nextProps, nextState) {... }
+              
+          *render()
+          *getSnapshortBeforeUpdate()
+          This method is called right before the virtual DOM is about to make change to the DOM (before DOM is updated). 
+         
+
+          *componentDidUpdate()
+          Jo capture huta hy getSnapshortBeforeUpdate method me wo third parameter hume componentDidUpdate method me milta hy.
+
+          This method is used  to re trigger the third party libraries used to make sure these libraries also update and reload thmselves.
+          -componentDidUpdate will not be invoked if should sholdComponentUpdate() return false.
+          if not return any thing as a third parameter, so it return undefine.
+
+     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Error Handling(optional phase) - These are used when there is error during rendering, in lifecycle method or in the constructor of any component.
+     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Unmounting - Unmounting is the process of removing components from the DOM.
+
 
 -------------------------------------------------------------------------------------------------------------
 

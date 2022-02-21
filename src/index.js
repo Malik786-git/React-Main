@@ -10,6 +10,7 @@ import Event from "./Event";
 import UpdateState from "./updateState";
 import Studentss from "./Eventargu";
 import Mounting from './Mounting';
+import Updating from './Updating';
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -80,7 +81,13 @@ import Mounting from './Mounting';
 
 
 // Mounting
+// ReactDOM.render(
+//   <Mounting name="this is mounting props"/>,
+//   document.getElementById('root')
+// )
+
+// Updating
 ReactDOM.render(
-  <Mounting name="this is mounting props"/>,
+  <Updating/>,
   document.getElementById('root')
 )
