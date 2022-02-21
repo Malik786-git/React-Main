@@ -273,13 +273,47 @@ Note: In both cases, the e argument representing the React event will be passed 
 
 
 
-------------------------------------------------------------------------------------------------------------
-Phases of Component...
+-------------------------------------------------------------------------------------------------------------
+Phases of Component... (Mounting, Updating,Error, Unmounting)
+this lifecycle method use only in class based component...
+
 Mounting - Mounting is the process of creating an element and inserting it in a DOM tree.
+Methods are used to create and inserted into the DOM.
+* constructor() ref(mounting.js to index.js)
+    initialize local state by assigning an object to this.state
+    Ex:- this.State = {name:"malik"}
+    Binding event handler method to an instance
+    Ex:- this.fun = this.fun(this);
+
+    note: constructor first call..
+
+
+* static getDerivedStateFromProps() ref(mounting.js to mount.js to index.js)
+    this is invoked right before calling the render method, both on the initial mount and on subsequent updates. 
+    It should return an object to update the state, or null to update nothing. This method exists for rare use cases
+    where the state depends on the changes in props over time. This method doesnot have access to the component instance.
+    syntax: static getDerivedStateFromProps(props, state){...  };
+
+    note: getDerivedStateFromProps second call after constructor call..
+* render()
+    simple run parent child hierarchy.
+
+* componentDidMount()
+    componentDidMount is invoked immediately after a component is mounted (insert into the tree), after the render()
+    method has taken place.
+    This is where AJAX  requests and DOM or state update sould occur. This method is also used for integration with other JS
+    frameworks and any function with delayed execution such as setTimeout or setInterval.
+
+    Api call sould be made in componentDidMount method always.
+    get data from server and set the data to state.
+
+    Note: it call last after whole app render.
+      
 Updating - Updating is the process of changing state or props of component and update change to nodes already in the DOM
-Error Handling - These are used when there is error during rendering, in lifecycle method or in the constructor of any component.
+Error Handling(optional phase) - These are used when there is error during rendering, in lifecycle method or in the constructor of any component.
 Unmounting - Unmounting is the process of removing components from the DOM.
 
+-------------------------------------------------------------------------------------------------------------
 
 
 

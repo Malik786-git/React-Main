@@ -9,6 +9,7 @@ import State from "./State";
 import Event from "./Event";
 import UpdateState from "./updateState";
 import Studentss from "./Eventargu";
+import Mounting from './Mounting';
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -72,7 +73,14 @@ import Studentss from "./Eventargu";
 
 // Event Argument..
 
+// ReactDOM.render(
+//   <Studentss roll="38"/>,
+//   document.getElementById('root')
+// )
+
+
+// Mounting
 ReactDOM.render(
-  <Studentss roll="38"/>,
+  <Mounting name="this is mounting props"/>,
   document.getElementById('root')
 )
