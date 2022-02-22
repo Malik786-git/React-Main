@@ -17,14 +17,18 @@ import React, {useState} from 'react'
 // through destructing
 export default function UseState() {
 
-    const [name, updateFun] = useState('malik');
-     const updateName = ()=>{
-         updateFun('jahangir');
+    const [name, updateUserName] = useState('malik');
+    const [rollNo, updateRoll] = useState(101);
+
+    
+     const updateFun = ()=>{
+         updateUserName('jahangir');
+         updateRoll(102);
      }  
  
     return <React.Fragment>
-                    <h1>Hello {name}</h1>
-                    <button type='button' onClick={updateName}>update</button>
+                    <h1>Hello {name}, your roll No is {rollNo}</h1>
+                    <button type='button' onClick={updateFun}>update</button>
            </React.Fragment>
 }
 

@@ -378,31 +378,31 @@ Hooks from React function components or cell Hooks from custom Hooks.
 
 -------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------
-                                     userState Hook (builting hooks)
+                                     useState Hook (builting hooks)
 -------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------
 
-userState() - userState is a hook that allows you add React state to function component. We call it inside a 
+useState() - useState is a hook that allows you add React state to function component. We call it inside a 
 function component to add some local state to it.
-userState reaturns a pair -  the current state value and a function that lets you update it.
+useState reaturns a pair -  the current state value and a function that lets you update it.
 React will preserve this state between re-renders
 You can call this function from an event handler  or somewhere else.
 
 Ex
 import React, {useState} from 'react';
-userState('malik'); // we now it return two things one is current state and second function, so we assign it in a variable.
+useState('malik'); // we now it return two things one is current state and second function, so we assign it in a variable.
 
-const abc = userState('malik');
+const abc = useState('malik');
 const x = abc[0]; const y = abc[1]; we assing current state in x and function in y;
 
 
 or best way using destructing....
-const [x, y] = userState('malik');
+const [x, y] = useState('malik');
 
 function App(){
-    const [x, y] = userState('malik');
-    const [x, y] = userState(101);
-    const [x, y] = userState([{sub:"math"}]);
+    const [x, y] = useState('malik');
+    const [x, y] = useState(101);
+    const [x, y] = useState([{sub:"math"}]);
 
     .....
 
@@ -411,7 +411,7 @@ function App(){
 Now Accessing State...
 example:
 
-const [name, funName] = userState('malik');
+const [name, funName] = useState('malik');
 
   accessing name and funName....
 
@@ -422,6 +422,22 @@ Updating State:
 funName('malik');
 
 
+
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+                                     useEffect Hook (builting hooks)
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+
+useEffect is a hook for encapsulating code that has 'side effects,' if you re familiar with Ract class lifecycle
+methods, you can think of useEffect Hook as componentDidMount, componentDidUpdate, and componentWillUnmount combined.
+import React, {useStae, useEffect} from 'react';
+useEffect(Function)
+useEffect(Function, Array) //here array argu is optional.
+
+Note: the function passed to useEffect will run after the render is committed to the screen. 
+      Second argument to useEffect that is the array of values that the effect depends on.
+      
 
 
 
