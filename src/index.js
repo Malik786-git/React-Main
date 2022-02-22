@@ -13,6 +13,7 @@ import Mounting from './Mounting';
 import Updating from './Updating';
 import Unmounting from './unmounting';
 import Unmount from './unmount';
+import UseState from "./useState";
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -96,16 +97,22 @@ import Unmount from './unmount';
 
 
 // Unmountng
+// ReactDOM.render(
+//   <Unmounting/>,
+//   document.getElementById('root')
+// )
+// ReactDOM.render(
+//   <Unmount/>,
+//   document.getElementById('stu')
+// )
+// // now we unmount root element
+// ReactDOM.unmountComponentAtNode(document.getElementById('root'));
+
+
+// ------------------------------------------------------------------
+// Hooks in React.. 
+
 ReactDOM.render(
-  <Unmounting/>,
+  <UseState/>,
   document.getElementById('root')
 )
-ReactDOM.render(
-  <Unmount/>,
-  document.getElementById('stu')
-)
-// now we unmount root element
-ReactDOM.unmountComponentAtNode(document.getElementById('root'));
-
-
-

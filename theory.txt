@@ -1,5 +1,9 @@
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+                                                 React Fragment
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
 (Ref file App.js to index.js)
-React Fragment
 Fragment is used to group a list of children without adding extra nodes to the DOM
 
 Example:
@@ -274,7 +278,12 @@ Note: In both cases, the e argument representing the React event will be passed 
 
 
 -------------------------------------------------------------------------------------------------------------
-Phases of Component... (Mounting, Updating,Error, Unmounting)
+-------------------------------------------------------------------------------------------------------------
+                          Phases of Component... (Mounting, Updating,Error, Unmounting)
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+
+
 this lifecycle method use only in class based component...
 
 Mounting - Mounting is the process of creating an element and inserting it in a DOM tree.
@@ -342,6 +351,85 @@ Unmounting - Unmounting is the process of removing components from the DOM.
 
 
 -------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+                                        HOOKS in React
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+Hooks are function that let you "hook  into" React state and lifecycle features from function component.
+React provides a few built in Hooks like useState, useEffect etc.
+Hooks are a new addition in React 16.8
+
+When use Hooks
+If you write a function component and realize you need to add some state to it.
+
+
+
+Rules Of Hooks..........
+*Only call Hooks at the top level - We should not call Hooks inside loops, conditions, or nested functions.
+Instead, always use Hooks at the top level of your React Function.
+
+*Only call Hooks from React function - We should not call Hooks from regular JavaScript functions. Instead, call
+Hooks from React function components or cell Hooks from custom Hooks.
+
+*React relies on the order in which Hooks are called.
+
+*Hooks don't work inside class.
+
+
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+                                     userState Hook (builting hooks)
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+
+userState() - userState is a hook that allows you add React state to function component. We call it inside a 
+function component to add some local state to it.
+userState reaturns a pair -  the current state value and a function that lets you update it.
+React will preserve this state between re-renders
+You can call this function from an event handler  or somewhere else.
+
+Ex
+import React, {useState} from 'react';
+userState('malik'); // we now it return two things one is current state and second function, so we assign it in a variable.
+
+const abc = userState('malik');
+const x = abc[0]; const y = abc[1]; we assing current state in x and function in y;
+
+
+or best way using destructing....
+const [x, y] = userState('malik');
+
+function App(){
+    const [x, y] = userState('malik');
+    const [x, y] = userState(101);
+    const [x, y] = userState([{sub:"math"}]);
+
+    .....
+
+}
+
+Now Accessing State...
+example:
+
+const [name, funName] = userState('malik');
+
+  accessing name and funName....
+
+<h1>Your Name is {name}</h1>
+
+Updating State:
+
+funName('malik');
+
+
+
+
+
+
+
+
+
+
 
 
 
