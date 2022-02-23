@@ -423,11 +423,11 @@ funName('malik');
 
 
 
--------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------
                                      useEffect Hook (builting hooks)
 -------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
 ref useEffect.js to index.js
 useEffect is a hook for encapsulating code that has 'side effects,' if you re familiar with Ract class lifecycle
 methods, you can think of useEffect Hook as componentDidMount, componentDidUpdate, and componentWillUnmount combined.
@@ -452,6 +452,23 @@ you passed and call it later after performong the DOM updates. In this effect, w
 data fetching or call some other imperative API.
 
 By default, it runs both after the first render and after every update.
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                      Custom Hook 
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+ref: customHook2.js to customHook.js to index.js
+
+A custom Hook is a js function whose name stars with 'use' and that may call other hook.
+function useSomething(){
+    return ....
+}
+
+const data = useSomething();
 
 
 

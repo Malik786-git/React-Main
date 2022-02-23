@@ -15,6 +15,7 @@ import Unmounting from './unmounting';
 import Unmount from './unmount';
 import UseState from "./useState";
 import UseEffect from "./useEffect";
+import Custom from './customHook';
 
 // app component
 // ReactDOM.render(
@@ -119,8 +120,15 @@ import UseEffect from "./useEffect";
 //   document.getElementById('root')
 // )
 
-// useEffect
+// // useEffect
+// ReactDOM.render(
+//   <UseEffect/>,
+//   document.getElementById('root')
+// )
+
+
+// custom hook
 ReactDOM.render(
-  <UseEffect/>,
+  <Custom/>,
   document.getElementById('root')
 )
