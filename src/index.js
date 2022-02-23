@@ -14,6 +14,8 @@ import Updating from './Updating';
 import Unmounting from './unmounting';
 import Unmount from './unmount';
 import UseState from "./useState";
+import UseEffect from "./useEffect";
+
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -111,8 +113,14 @@ import UseState from "./useState";
 
 // ------------------------------------------------------------------
 // Hooks in React.. 
+// useState
+// ReactDOM.render(
+//   <UseState/>,
+//   document.getElementById('root')
+// )
 
+// useEffect
 ReactDOM.render(
-  <UseState/>,
+  <UseEffect/>,
   document.getElementById('root')
 )

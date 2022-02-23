@@ -381,7 +381,7 @@ Hooks from React function components or cell Hooks from custom Hooks.
                                      useState Hook (builting hooks)
 -------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------
-
+ref useStae.js to index.js
 useState() - useState is a hook that allows you add React state to function component. We call it inside a 
 function component to add some local state to it.
 useState reaturns a pair -  the current state value and a function that lets you update it.
@@ -428,7 +428,7 @@ funName('malik');
                                      useEffect Hook (builting hooks)
 -------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------
-
+ref useEffect.js to index.js
 useEffect is a hook for encapsulating code that has 'side effects,' if you re familiar with Ract class lifecycle
 methods, you can think of useEffect Hook as componentDidMount, componentDidUpdate, and componentWillUnmount combined.
 import React, {useStae, useEffect} from 'react';
@@ -437,7 +437,24 @@ useEffect(Function, Array) //here array argu is optional.
 
 Note: the function passed to useEffect will run after the render is committed to the screen. 
       Second argument to useEffect that is the array of values that the effect depends on.
-      
+
+
+     useEffect(()=>{
+         console.log('hello world')
+     }); 
+
+     useEffect(()=>{
+         console.log('hello world')
+     }, [count]); 
+
+By usring this Hook, you tell React that your component needs to do something after render. React will remember the function
+you passed and call it later after performong the DOM updates. In this effect, we set the document title, we could also perform
+data fetching or call some other imperative API.
+
+By default, it runs both after the first render and after every update.
+
+
+
 
 
 
