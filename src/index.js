@@ -16,6 +16,9 @@ import Unmount from './unmount';
 import UseState from "./useState";
 import UseEffect from "./useEffect";
 import Custom from './customHook';
+import Conditional from './conditional';
+import InlineApp from './inline2'
+import Maine from './conditional/Main';
 
 // app component
 // ReactDOM.render(
@@ -127,8 +130,28 @@ import Custom from './customHook';
 // )
 
 
-// custom hook
+// // custom hook
+// ReactDOM.render(
+//   <Custom/>,
+//   document.getElementById('root')
+// )
+
+// // conditional statement..
+// ReactDOM.render(
+//   <Conditional consumer={true}/>,
+//   document.getElementById('root')
+// )
+
+// Inline condition..
+// ReactDOM.render(
+//   <InlineApp member={true}/>,
+//   document.getElementById('root')
+// )
+
+
+// ///////////////////////////////////
 ReactDOM.render(
-  <Custom/>,
+  <Maine/>,
   document.getElementById('root')
 )
+//////////////////////////////////////

@@ -471,8 +471,73 @@ function useSomething(){
 const data = useSomething();
 
 
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                      Conditional Rendering
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+ref: condition.js to conditional.js to condition.js to index.js
+
+Conditional rendering in React works the same way conditions work in JavaScript...
+but if/else not work in JSX. in JSX {} we only write expression not conditions.
+  <div id ={if(condition){...}}>Hello World</div>
+   after bable render it so it change into.
+    React.createELement('div', {id: if(condition){...}}, "hello"); // here it is not valid js...
+
+    Solution is...
+     if(true){
+         return something;
+     }
 
 
+---------------------------------------------------------------------------------------------------
+
+inline.js to inline.js to index.js
+
+Inline if with logical and Operator
+You may embed any expression in JSX by wrapping them in curly braces.
+
+Operand 1    Operand 2  Resutl
+T              F           F
+T              T           T 
+T              exp        exp
+false          exp        false
+
+or 
+
+true && expression1 && expression2  => get expression2
+
+example:
+ purchase && <Payment/> // if value of purchase is true, so Payment are render otherwise component will be ignore.
+
+practise make a app... ref folder condition
+
+
+---------------------------------------------------------------------------------------------------
+Inline if/else with condition Operator 
+
+syntax: condition ? exp1 : exp 2
+also see it example in ref folder condition...
+
+
+
+----------------------------------------------------------------------------------------------------
+IIFE.... it is a js function call itself automatically.
+return(
+    <div>
+                  {
+
+                           // this is IIFE... in this function we write anytype of js code. sometime very useful but less use in projects..
+                           (()=>{
+                               // your code here...
+                           })()
+
+
+                  }
+    </div>
+)
+
+also see it example in ref folder condition...
 
 
 
