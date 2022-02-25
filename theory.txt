@@ -541,12 +541,38 @@ also see it example in ref folder condition...
 
 
 
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                      List in React JS
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+ref list.js to index.js
 
+You can build collection of elemtns and include them in JSX using {}.
+example: const arr = [a,b,c,d];
+In react we make a list in state..
+state = {
+    user: [
+        {id:101, name:"malik"},
+        {id:101, name:"malik"},
+        {id:101, name:"malik"},
+        {id:101, name:"malik"}
+    ],
 
+    isLoggedIn: false
+}
 
+Iteration using map() Method
+The map method create a new array with result of calling provided function on element in the calling array.
+map calls a provided callback function once for each element in an array, in order, and and return a new 
+array from the results.
 
+Syntax: map(callback(currentValue, index, array), thisArg);
+        map((num, index)=>{return num})
 
-
+example::
+               const arr  = [10, 20, 30,40];
+               const newArr = arr.map( num => <li>{num*2}</li> );
 
 
 

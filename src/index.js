@@ -19,6 +19,7 @@ import Custom from './customHook';
 import Conditional from './conditional';
 import InlineApp from './inline2'
 import Maine from './conditional/Main';
+import List from './list/list';
 
 // app component
 // ReactDOM.render(
@@ -148,10 +149,20 @@ import Maine from './conditional/Main';
 //   document.getElementById('root')
 // )
 
-
+// practice condition 
 // ///////////////////////////////////
+// ReactDOM.render(
+//   <Maine/>,
+//   document.getElementById('root')
+// )
+//////////////////////////////////////
+
+
+// list in react
+// for props example in list.js...
+const arrValues = [10, 20, 30, 40];
+
 ReactDOM.render(
-  <Maine/>,
+  <List numbers={arrValues}/>,
   document.getElementById('root')
 )
-//////////////////////////////////////
