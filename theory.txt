@@ -576,10 +576,47 @@ example::
 
 
 
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                      Key in React JS
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+
+key.js to index.js
+and 
+keyUser.js to keyApp.js to index.js
+
+A key is a special string attribute you need to include when creating lists of elements.
+Keys help React identify which items have changed, are added, or are removed.
+Key should be given to the elements inside the array to give the element a stable identity.
+The best way to pick a key is to use a string that uniquely identifies a list item among its sibling.
+Most often you would use IDs from your data as keys..
+(basically this key is a primary key, real world project it is PK of database)
+
+Example::
+         const arr = [10, 20, 30, 40]
+         const newArr = arr.map( (num,i )=> (<li key={i} >{num}</li>))
+         here index is unique for every object to we assign index as a PK in key value..
+         (this is for only example, but it is not valid to make a index as a key value...) 
 
 
+Another Example::
+state = {
+    user: [
+        {id:101, name:"malik"},
+        {id:101, name:"malik"},
+        {id:101, name:"malik"},
+        {id:101, name:"malik"}
+    ],
 
+    isLoggedIn: false
+}
 
+const newUser = this.state.user.map(usr => {
+    return (
+        <h1 key={user.id} > ID: {usr.id} Name: {usr.name}</h1>
+    )
+})
 
 
 

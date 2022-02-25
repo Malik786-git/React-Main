@@ -20,6 +20,8 @@ import Conditional from './conditional';
 import InlineApp from './inline2'
 import Maine from './conditional/Main';
 import List from './list/list';
+import Key from './keys/key';
+import KeyApp from './keys/keyApp';
 
 // app component
 // ReactDOM.render(
@@ -160,9 +162,22 @@ import List from './list/list';
 
 // list in react
 // for props example in list.js...
-const arrValues = [10, 20, 30, 40];
+// const arrValues = [10, 20, 30, 40];
 
+// ReactDOM.render(
+//   <List numbers={arrValues}/>,
+//   document.getElementById('root')
+// )
+
+
+
+// Key in Reack
+// ReactDOM.render(
+//   <Key/>,
+//   document.getElementById('root')
+// )
+const arrValue = [10, 20, 30, 40];
 ReactDOM.render(
-  <List numbers={arrValues}/>,
+  <KeyApp numbers={arrValue}/>,
   document.getElementById('root')
 )
