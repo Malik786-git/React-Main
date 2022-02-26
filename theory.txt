@@ -620,5 +620,31 @@ const newUser = this.state.user.map(usr => {
 
 
 
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                      Styling Component Inline Style
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+
+Styling in CSS have four way...
+*Inline Stylesheet.
+*External Stylesheet
+*CSS module
+*CSS in JS.
+
+CSS classes are generally better for performance than inline style.
+
+style are not autoprefixed. Vender prefixes other than ms should begin with a capital letter e.g WebkitTransition has an uppercase "W"
+like webkit -ms mozilla etc... 
+
+
+const btnStyle = {
+    color: 'red',
+    backgroundColor: 'blue'
+}
+
+apply in html
+<button style={btnStyle}>Submit</button>
+
 
 

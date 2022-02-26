@@ -22,6 +22,7 @@ import Maine from './conditional/Main';
 import List from './list/list';
 import Key from './keys/key';
 import KeyApp from './keys/keyApp';
+import InlineStyle from './Styling/inlineStyle';
 
 // app component
 // ReactDOM.render(
@@ -176,8 +177,15 @@ import KeyApp from './keys/keyApp';
 //   <Key/>,
 //   document.getElementById('root')
 // )
-const arrValue = [10, 20, 30, 40];
+// const arrValue = [10, 20, 30, 40];
+// ReactDOM.render(
+//   <KeyApp numbers={arrValue}/>,
+//   document.getElementById('root')
+// )
+
+
+// Inline style..
 ReactDOM.render(
-  <KeyApp numbers={arrValue}/>,
+  <InlineStyle/>,
   document.getElementById('root')
 )
