@@ -1,0 +1,17 @@
+.txt{
+    color: blue;
+}
+/* for conditional situation. */
+.txt1{
+  color: red;
+}
+.txt2{
+  color: green;
+}
+/* also */
+.txtColor{
+    color: hotpink;
+}
+.txtSize{
+   font-size: 50px;
+}

@@ -23,6 +23,8 @@ import List from './list/list';
 import Key from './keys/key';
 import KeyApp from './keys/keyApp';
 import InlineStyle from './Styling/inlineStyle';
+import External from './ExternalStyle/external';
+import AppModule from './cssModule/AppModule';
 
 // app component
 // ReactDOM.render(
@@ -185,7 +187,19 @@ import InlineStyle from './Styling/inlineStyle';
 
 
 // Inline style..
+// ReactDOM.render(
+//   <InlineStyle/>,
+//   document.getElementById('root')
+// )
+
+// External style..
+// ReactDOM.render(
+//   <External/>,
+//   document.getElementById('root')
+// )
+
+// External style..
 ReactDOM.render(
-  <InlineStyle/>,
+  <AppModule/>,
   document.getElementById('root')
 )

@@ -647,4 +647,53 @@ apply in html
 <button style={btnStyle}>Submit</button>
 
 
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                    Styling Component External Stylesheet
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+App.CSS
+.txt{
+    color:'red';
+}
 
+App.js
+import './App.CSS'
+use
+<button className = 'txt'>Submit</button>
+
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                    Styling Component CSS Module
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+In inline css we are not use Pseudo classes like hover etc..
+In external css, we need must use unique name for every css file property..
+So we use CSS module to solution of both problems...
+
+CSS Module
+let you use the same CSS class name in different files without worrying about naming clashes.
+It is automatically className uniquely assing which format like [filename]\_[className]\_\[hash]
+
+example...
+FileName
+App.module.css
+
+import style from './App.module.css';
+<h1 className={style.txt}>Hello World</h1>
+
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                     CSS in JS
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+CSS in JS refers to a pattern where CSS is composed using JavaScript instead of defined in external files. 
+This functionality is not a part of React, but provided by third party libraries..
+popular libraries..
+
+*Glamorous.
+*Styled Component.
+*Radium
+*Emotion

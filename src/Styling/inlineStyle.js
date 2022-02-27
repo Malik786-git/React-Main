@@ -86,3 +86,4 @@ export default class InlineStyle extends Component {
     )
 }
 }
+
