@@ -17,27 +17,27 @@ import React, { Component } from 'react'
 
 // or apply two style property in one tag..
 
-// export default class InlineStyle extends Component {
-//   render() {
-//       // style inline must be in render method out side the return 
-//       const textColor = {
-//           color: 'white',
-//           backgroundColor: 'blue'
-//       }
-//       const textSize = {
-//           fontSize: '80px',
-//       }
-//     return (
-//       <div>
-//       {/* this is not valid no style is apply  */}
-//         {/* <h1 style={textColor, textSize}>Hello</h1> */}
+export default class InlineStyle extends Component {
+  render() {
+      // style inline must be in render method out side the return 
+      const textColor = {
+          color: 'white',
+          backgroundColor: 'blue'
+      }
+      const textSize = {
+          fontSize: '80px',
+      }
+    return (
+      <div>
+      {/* this is not valid no style is apply  */}
+        {/* <h1 style={textColor, textSize}>Hello</h1> */}
         
-//          {/*so we use spread operator to apply both of style in h1  */}
-//         <h1 style={{...textColor,...textSize}}>Hello</h1>
-//       </div>
-//     )
-// }
-// }
+         {/*so we use spread operator to apply both of style in h1  */}
+        <h1 style={{...textColor,...textSize}}>Hello</h1>
+      </div>
+    )
+}
+}
 
 
 // or
@@ -61,6 +61,7 @@ import React, { Component } from 'react'
 
 //  now we add event to make it more attractive...
 // here we want if i click on button, so the color of button will be change
+
 export default class InlineStyle extends Component {
     
     state = {

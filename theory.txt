@@ -734,16 +734,3 @@ import pic fromt './pic.jpg';
 Note : The above technique not for only image, it is also apply of all type of assets...
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
