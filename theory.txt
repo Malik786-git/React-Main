@@ -686,7 +686,7 @@ import style from './App.module.css';
 
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
-                                     CSS in JS
+                                             CSS in JS
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 CSS in JS refers to a pattern where CSS is composed using JavaScript instead of defined in external files. 
@@ -697,3 +697,53 @@ popular libraries..
 *Styled Component.
 *Radium
 *Emotion
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                Image and other asserts Use in React JS
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+ref: Directly in index.js
+ref: useAssets folder. Assets.js to index.js......
+Acess in two way..
+
+1)Inside the public folder: If you put a file into the public folder, it will not be processed by Webpack.
+                            Instead it will be copied into the build foldre untouched.
+                            To reference assets in the public foldre, you need to use a special variable 
+                            called PUBLIC URL. Only files inside the public folder will be accessible by 
+                            %PUBLIC_URL% prefix.
+                            example: <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+                            Example: how to use...
+                            If image in public folder.
+                            to use in index.html Directly: <img scr="%PUBLIC_URL%/img.jpg" alt='mypic'/>
+                            to use in App.js: <img scr={process.env.PUBLIC_URL + "/img.jpg"} />
+
+                               
+2)Inside src folder:
+
+With Webpack using statis assets like image and fonts works similarly to css.
+same Import like to import css file in app.js
+
+How to use
+App.js
+import pic fromt './pic.jpg';
+<img src = {pic}/>
+
+
+Note : The above technique not for only image, it is also apply of all type of assets...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

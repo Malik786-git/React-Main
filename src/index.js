@@ -25,6 +25,7 @@ import KeyApp from './keys/keyApp';
 import InlineStyle from './Styling/inlineStyle';
 import External from './ExternalStyle/external';
 import AppModule from './cssModule/AppModule';
+import Assets from './useAssets/Assets';
 
 // app component
 // ReactDOM.render(
@@ -199,7 +200,13 @@ import AppModule from './cssModule/AppModule';
 // )
 
 // External style..
+// ReactDOM.render(
+//   <AppModule/>,
+//   document.getElementById('root')
+// )
+
+// Use Assets in React..
 ReactDOM.render(
-  <AppModule/>,
+  <Assets/>,
   document.getElementById('root')
 )
