@@ -731,6 +731,7 @@ import pic fromt './pic.jpg';
 <img src = {pic}/>
 
 
-Note : The above technique not for only image, it is also apply of all type of assets...
+Note : The above technique not for only image, it is also apply of all type of assets.
+
 
 
