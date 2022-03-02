@@ -734,4 +734,40 @@ import pic fromt './pic.jpg';
 Note : The above technique not for only image, it is also apply of all type of assets.
 
 
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                    Add bootstrap In React Js
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+ref Addbootstrap folder;
+
+add css link in index.html.
+csslink copy from bootstrap.com.
+
+then use class in app component.
+ <button className='btn btn-warning'>Submit</button> 
+................................
+
+second way to install bootstrap in our project.
+>npm install bootstrap
+{/* for internal bootstrap file first import bootstrap file index.js then use in tags. */}
+
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                           Form In React Js
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+
+HTML form element work a little bit differently from other DOM elements in React, because form elements naturally keep 
+some internal state. In HTML form elements such as <input>, <textarea> and <select> typically maintain their own state
+and update it based on user input. In React, mutable state in typically kept in the state property of components, and 
+only updated with setState()...
+
+Controlled Component.... 
+You need to write an event handler for every way your data can change and pipe all of the input state through a React Component.
+for example user input data in form capital letter, but you want in small letter. so you write a logic to uppercase to lowercase in control component.
+
+Uncontrolled Component...
+You do not need to write an event handler for every way your data can change and pipe all of the input state through a React Component.
 

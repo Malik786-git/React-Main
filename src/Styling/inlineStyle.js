@@ -62,29 +62,29 @@ export default class InlineStyle extends Component {
 //  now we add event to make it more attractive...
 // here we want if i click on button, so the color of button will be change
 
-export default class InlineStyle extends Component {
+// export default class InlineStyle extends Component {
     
-    state = {
-        change:false
-    }
-    clickHandler = ()=>{
-        this.setState({change:true})
-    }
+//     state = {
+//         change:false
+//     }
+//     clickHandler = ()=>{
+//         this.setState({change:true})
+//     }
 
-  render() {
-      // style inline must be in render method out side the return 
-      const btnStyle = {
-          color: 'blue',
-          backgroundColor: 'red'
-      }
-     if (this.state.change) {
-         btnStyle.backgroundColor = 'white';
-     }
-    return (
-      <div>
-        <button onClick={this.clickHandler} style={btnStyle}>Submit</button>
-      </div>
-    )
-}
-}
+//   render() {
+//       // style inline must be in render method out side the return 
+//       const btnStyle = {
+//           color: 'blue',
+//           backgroundColor: 'red'
+//       }
+//      if (this.state.change) {
+//          btnStyle.backgroundColor = 'white';
+//      }
+//     return (
+//       <div>
+//         <button onClick={this.clickHandler} style={btnStyle}>Submit</button>
+//       </div>
+//     )
+// }
+// }
 

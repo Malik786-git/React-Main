@@ -26,7 +26,9 @@ import InlineStyle from './Styling/inlineStyle';
 import External from './ExternalStyle/external';
 import AppModule from './cssModule/AppModule';
 import Assets from './useAssets/Assets';
-
+import AddBootstrap from './AddBootstrap/bootstrap';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import ControlComponent from './Forms/controlComponentForm';
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -206,7 +208,20 @@ import Assets from './useAssets/Assets';
 // )
 
 // Use Assets in React..
+// ReactDOM.render(
+//   <Assets/>,
+//   document.getElementById('root')
+// )
+
+// add bootstrap.
+// ReactDOM.render(
+//   <AddBootstrap/>,
+//   document.getElementById('root')
+// )
+
+// FORMS
+// controled component..
 ReactDOM.render(
-  <Assets/>,
+  <ControlComponent/>,
   document.getElementById('root')
 )
