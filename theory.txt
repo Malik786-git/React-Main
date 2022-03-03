@@ -770,4 +770,40 @@ for example user input data in form capital letter, but you want in small letter
 
 Uncontrolled Component...
 You do not need to write an event handler for every way your data can change and pipe all of the input state through a React Component.
+refs: Refs provided a way to access DOM nodes or React element create in the render method.
+ When we use REFS.
+        Managing focus, tex selection, or media playback.
+        Triggering imperative animations.
+        integrating with third party DOM libraries.
+
+Creating Refs..
+        Refs are created using React.createRef() and attached to React elements via the ref attribute.
+        example..
+        this.myRef = React.createRef();
+
+render(){
+    return <h1 ref={this.myRef}>Hello World</h1>
+    access ..  const node = this.myRef.current;
+}
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                        Lifting State up In React Js
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+ref: LiftingState folder...
+
+            App.js                           User.js                       Guest.js
+         ------------------------         -------------------      --------------------
+        |                       |   props |                  |     |                   |
+        |state = {name:'malik'} |-------->|                  |     |                   |
+        |                       |         |                  |     |                   |
+         ------------------------         -------------------       --------------------
+                  |_______________________________________________________________|
+                                               props
+
+In above diagram show the component of App.js use in user.js and guest.js with with its props.
+
+
+
 

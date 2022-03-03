@@ -29,6 +29,8 @@ import Assets from './useAssets/Assets';
 import AddBootstrap from './AddBootstrap/bootstrap';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import ControlComponent from './Forms/controlComponentForm';
+import UncontrolComponent from './Forms/UncontrolComponent';
+import LiftingApp from './LiftingState/LiftingApp';
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -221,7 +223,17 @@ import ControlComponent from './Forms/controlComponentForm';
 
 // FORMS
 // controled component..
+// ReactDOM.render(
+//   <ControlComponent/>,
+//   document.getElementById('root')
+// )
+// uncontroled component..
+// ReactDOM.render(
+//   <UncontrolComponent/>,
+//   document.getElementById('root')
+// )
+// Lifting State Up..
 ReactDOM.render(
-  <ControlComponent/>,
+  <LiftingApp/>,
   document.getElementById('root')
 )
