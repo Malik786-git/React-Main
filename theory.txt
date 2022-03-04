@@ -794,16 +794,64 @@ render(){
 ref: LiftingState folder...
 
             App.js                           User.js                       Guest.js
-         ------------------------         -------------------      --------------------
-        |                       |   props |                  |     |                   |
-        |state = {name:'malik'} |-------->|                  |     |                   |
-        |                       |         |                  |     |                   |
-         ------------------------         -------------------       --------------------
+       -------------------------         -------------------      --------------------
+       |                       |   props |                  |     |                   |
+       |state = {name:'malik'} |-------->|                  |     |                   |
+       |                       |         |                  |     |                   |
+        ------------------------         -------------------       --------------------
                   |_______________________________________________________________|
                                                props
 
 In above diagram show the component of App.js use in user.js and guest.js with with its props.
 
 
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                        Context API In React Js
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+           parent                          child                      grandchild
 
 
+            App.js                           User.js                       Guest.js
+         ------------------------         -------------------      --------------------
+        |                       |   props |                  |     |                   |
+        |state = {name:'malik'} |-------->|                  |---->|                   |
+        |                       |         |                  |     |                   |
+         ------------------------         -------------------       --------------------
+
+if we want to use parent props in grandchild, so we need first parent prop pass to child then, from child to grandchild.
+if the hierarchy increase to the complexity more. also above case props use in grandchild but not use in child, 
+so the solution is use Context api.
+Context provide a way to pass data through the component tree without having to pass props down  manually at every level.
+In Context api, we pass value from parent to child without any props.
+
+
+*Passing the initial state to React.createContext. This function then return an object with a Provider and a Consumer.
+*Using the Provider component at the top of the tree and making it accept a props called value. This value can e anything.
+*Using the Consumer component any where below the Provider in the component tree to get a subset of the state.
+
+1)createContext
+const MyContext = React.createContext(defaultValue); default value is optional
+defaultValue: it is only used when a component does not have a matching Provider above it in the tree.
+const MyContext = React.createContext(false);
+const MyContext = React.createContext('white');
+const MyContext = React.createContext({user: 'Guest'});
+
+2)Context Provider
+Every Context object come with a Provider, React component that allows consuming components to subscribe to context change.
+One provider use in different consumer.
+Syntax:
+  <MyContext.Provider value={/*some value*/}>
+
+A value props to be passed to consuming components that are descendants of this Provider.
+
+3)context Consumer
+A React component that subscribe to context changes. 
+It require a function as a child. The function recerives the current context value and return a React node.
+The value argument passed to the fuction will be equal to the value prop of the closest Provider for this context above in the tree.
+If there is no Provider for this context above, the value argument will be equal to the defaultValue that was passed to createContext()
+
+<MyContext.Consumer>
+  {value =>  // render something based on the context value }
+</MyContext.Consumer>

@@ -31,6 +31,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import ControlComponent from './Forms/controlComponentForm';
 import UncontrolComponent from './Forms/UncontrolComponent';
 import LiftingApp from './LiftingState/LiftingApp';
+import Context from './ContextApi/context';
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -233,7 +234,13 @@ import LiftingApp from './LiftingState/LiftingApp';
 //   document.getElementById('root')
 // )
 // Lifting State Up..
+// ReactDOM.render(
+//   <LiftingApp/>,
+//   document.getElementById('root')
+// )
+
+// Context Api
 ReactDOM.render(
-  <LiftingApp/>,
+  <Context/>,
   document.getElementById('root')
 )

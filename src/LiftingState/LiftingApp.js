@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import LiftingUser from './LiftingUser'
 
+
 export default class LiftingApp extends Component {
           state = {
               name: 'malik'
@@ -13,3 +14,4 @@ export default class LiftingApp extends Component {
     )
   }
 }
+
