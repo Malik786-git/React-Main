@@ -855,3 +855,31 @@ If there is no Provider for this context above, the value argument will be equal
 <MyContext.Consumer>
   {value =>  // render something based on the context value }
 </MyContext.Consumer>
+=============
+Context TYpe:
+The contexttype property on a class can be assigned a Context object created by React.createContext(). This lets you consume 
+the nearest current value of that Context type using this.context.
+ static contextType = MyContext;
+
+
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                        Strict Mode in React
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+
+Strict Mode is a tool for hihlightting potential problems in an application.
+it is check are run in development mode only..
+
+Example:
+<React.StrictMode>
+   <User/>
+</React.StrictMode>
+
+It is help: 
+       -identifies components with unsafe lifecycle.
+       -Warning about legacy string ref API usage.
+       -Warning about deprecated findDOMNode usage.
+       -Detecting unexpected side effects
+       -Detect legacy context API.

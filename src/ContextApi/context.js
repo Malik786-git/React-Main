@@ -88,6 +88,28 @@ import UserContext from './UserContext'
 // }
 
 // default value...
+// import { Provider } from './ContextFile';
+
+// export default class Context extends Component {
+//     state = {
+//         name: 'Malik',
+//         rollNo: 38
+//     }
+//     HandleClickContext = () =>{
+//         this.setState({rollNo: this.state.rollNo+1})
+//     }
+//   render() {
+    
+//     const contextValue = {
+//         data: this.state,
+//          UpdateFun: this.HandleClickContext 
+//     }
+
+//     return <UserContext/>
+//   }
+// }
+// Context Type...
+
 import { Provider } from './ContextFile';
 
 export default class Context extends Component {
@@ -105,6 +127,12 @@ export default class Context extends Component {
          UpdateFun: this.HandleClickContext 
     }
 
-    return <UserContext/>
+    return (
+      <div>
+        <Provider value={contextValue}>
+            <UserContext/>
+        </Provider>
+      </div>
+    )
   }
 }

@@ -32,6 +32,8 @@ import ControlComponent from './Forms/controlComponentForm';
 import UncontrolComponent from './Forms/UncontrolComponent';
 import LiftingApp from './LiftingState/LiftingApp';
 import Context from './ContextApi/context';
+import Strict from './StrictMode/Strict';
+
 // app component
 // ReactDOM.render(
 //     <App/>,
@@ -240,7 +242,13 @@ import Context from './ContextApi/context';
 // )
 
 // Context Api
+// ReactDOM.render(
+//   <Context/>,
+//   document.getElementById('root')
+// )
+
+// Strict Mode
 ReactDOM.render(
-  <Context/>,
+  <Strict/>,
   document.getElementById('root')
 )
