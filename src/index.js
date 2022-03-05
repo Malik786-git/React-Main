@@ -33,6 +33,8 @@ import UncontrolComponent from './Forms/UncontrolComponent';
 import LiftingApp from './LiftingState/LiftingApp';
 import Context from './ContextApi/context';
 import Strict from './StrictMode/Strict';
+import Hoc from './HOC/Hoc';
+import ErrorApp from './ErrorBoundary/ErrorApp';
 
 // app component
 // ReactDOM.render(
@@ -248,7 +250,20 @@ import Strict from './StrictMode/Strict';
 // )
 
 // Strict Mode
+// ReactDOM.render(
+//   <Strict/>,
+//   document.getElementById('root')
+// )
+
+
+// Higher Order Component
+// ReactDOM.render(
+//   <Hoc/>,
+//   document.getElementById('root')
+// )
+
+// Error Boundaries..
 ReactDOM.render(
-  <Strict/>,
+  <ErrorApp/>,
   document.getElementById('root')
 )
