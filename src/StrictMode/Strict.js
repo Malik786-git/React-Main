@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component, StrictMode } from 'react'
 import StrictUser from './StrictUser'
 
 export default class Strict extends Component {
   render() {
     return (
       <div>
-      <React.StrictMode>
+      <StrictMode>
         <StrictUser/>
-      </React.StrictMode>
+      </StrictMode>
       </div>
     )
   }
