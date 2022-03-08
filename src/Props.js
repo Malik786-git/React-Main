@@ -9,9 +9,8 @@ import PropTypes from 'prop-types';
 //     )
 // }
 
-// for class and props-type
 
-
+// for class and props-type...
 class Props extends Component {
     render() {
         return (
@@ -25,12 +24,10 @@ class Props extends Component {
 Props.propTypes = {
        name: PropTypes.string,
        roll: PropTypes.number.isRequired  // agr roll ki value nh di hugi, or roll use huwa hy to error ajayega.
-    }
+}
     
 Props.defaultProps = {
     semester: "5th"
 }
-
-
 
 export default Props;

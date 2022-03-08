@@ -129,6 +129,7 @@ Specifying attribute with JSX.
 
 -----------------------------------------------------------------------------------------
 ref props.js to index.js
+-----------------------------------------------------------------------------------------
 PROPS.....
 
 When React sees an element representing a user-define  component, it pass JSX attribute to this component as a single object. 
@@ -159,7 +160,6 @@ Student.propTypes = {
     symbol: PropTypes.symbol
 
 }
-
 
 
 ----------------------------------------------------------------------------------------------
