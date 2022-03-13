@@ -23,7 +23,6 @@ Function Component;
 It is a JS function which accepts a single "props" object argument with data and return a React Element..
 
 
-
 function fun1(props) {
     return <h1>Hello</h1>
 }
